@@ -1,0 +1,85 @@
+
+ .header {
+    padding: 18px;
+    text-align: center;
+    background: #eeeeee;
+    color: black;
+    font-size: 30px;
+  }
+
+  .class-btnclr{
+    background: #7e7a7a;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+    outline: none !important;
+  }
+
+  .class-btnclr1{
+    background: #7e7a7a;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+    outline: none !important;
+    margin: 6px;
+    width: 84px
+  }
+
+  #curencySelect{
+    width: 100%;
+    height: 57%;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+  }
+
+  select option {
+    margin: 40px;   
+}
+
+  .form-control{
+    padding:5px;
+    background-color:#f7f7f7;
+    border:1px solid black;
+    }
+
+    .clss-txtcolor{
+      color: black;
+      font-size: 100%;
+
+    }
+    .header-right{
+      float: right;
+    }
+    .header-left{
+      float: left;
+    }
+    .class-logoutval{
+      margin: -96%;
+      font-weight: 500;
+
+    }
+    .class-backval{
+      margin: -129%;
+      font-weight: 500;
+
+    }
+
+    .erromsg {
+      color: red;
+      font-size: 11px;
+      text-align: center
+     
+    }
+
+    .form-line-active input:focus, .form-line-active textarea:focus {
+      border: 1px solid green !important;
+      box-shadow: 0 0 3px green !important;
+      -moz-box-shadow: 0 0 3px green !important;
+      -webkit-box-shadow: 0 0 3px green !important;
+      }
+      
+      input:focus, textarea:focus, select:focus {
+      outline-offset: 0px !important;
+      outline: none !important;
+      }
+ 

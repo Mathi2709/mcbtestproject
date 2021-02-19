@@ -1,0 +1,40 @@
+.header {
+    padding: 18px;
+    text-align: center;
+    background: #eeeeee;
+    color: black;
+    font-size: 30px;
+  }
+
+  table {
+    width: 100%;
+    border: 1px solid black;
+
+  }
+  th{
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .header-right{
+    float: right;
+  }
+  .header-left{
+    float: left;
+  }
+  .class-logoutval{
+    margin: -96%;
+    font-weight: 500;
+
+  }
+  .class-backval{
+    margin: -129%;
+    font-weight: 500;
+  }

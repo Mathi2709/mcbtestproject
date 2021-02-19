@@ -1,0 +1,96 @@
+<div class="header">
+    <h1>New Transaction</h1>  
+    <div class="header-left">
+      <h3 class="class-backval" (click)="onClickBack()">Back</h3>    
+    </div>
+    <div class="header-right">
+      <h3 class="class-logoutval" (click)="onClickval()">Logout</h3>    
+    </div>  
+  </div>
+  <div class="row  mb-5"> 
+  </div>  
+  <div class="form-group">
+  <div class="container">
+    <div class="form_container ">
+      <form [formGroup]="bankTranasctionFrm" (ngSubmit)="submitBtnClick()">
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="refer" class="clss-txtcolor">Reference</label>       
+        <input type="text" class="form-control class-btnnew" #refer id="refer" formControlName="refer" disabled>
+      </div>
+      <div class="col-sm-4">
+        <label for="custnmbr" class="clss-txtcolor">Customer Number</label>
+        <input type="text" class="form-control" #custnmbr id="custnmbr" formControlName="custnmbr" autocomplete="off" (input)="customerNumberonFocus()" >
+      </div>
+      <div class="col-sm-4">
+        <label for="custname" class="clss-txtcolor">Customer Name</label>
+        <input type="text" class="form-control" #custname id="custname" formControlName="custname" autocomplete="off" >
+      </div>
+    </div>
+    <div class="row  mb-3"> 
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+          <label for="custaddr" class="clss-txtcolor">Customer Address</label>
+          <input type="text" class="form-control" id="custaddr" #custaddr formControlName="custaddr" autocomplete="off" >
+        </div>
+        <div class="col-sm-4">
+          <label for="custphnmbr" class="clss-txtcolor">Customer PhoneNumber</label>
+          <input type="tel"  minlength="1" maxlength="10" (input)="onFocus($event)"#custphnmbr autocomplete="off"  class="form-control" id="custphnmbr"  formControlName="custphnmbr">
+          <div class="erromsg" *ngIf="showmsg">PhoneNumber allow numbers only</div>  
+        </div>
+        <div class="col-sm-4">
+          <label for="trnsframnt" class="clss-txtcolor">Transfer Amount</label>
+          <input type="tel"   minlength="1" maxlength="10" (input)="onFocus($event)" autocomplete="off" class="form-control" id="trnsframnt" formControlName="trnsframnt">
+          <div class="erromsg" *ngIf="showmsg1">Amount allow numbers only</div>
+        </div>
+      </div>
+      <div class="row  mb-3"> 
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <label for="trnsfrcur" class="clss-txtcolor">Transfer Currency</label>
+          <div></div>
+          <select  id="curencySelect" name="curencySelect" formControlName="curencySelect" >
+            <option  disabled selected>AED</option>
+            <option>AED</option>
+            <option>EUR</option>
+            <option>CHF</option>
+            <option>MUR</option>
+            <option>USD</option>
+          </select>          
+        </div>
+        <div class="col-sm-4">
+          <label for="benecrybank" class="clss-txtcolor" >Beneficiary Bank</label>
+          <input type="text" class="form-control" id="benecrybank" (input)="onFocus($event)" formControlName="benecrybank" autocomplete="off">
+          <div class="erromsg" *ngIf="showmsg2">Allow characters only</div>
+
+        </div>
+        <div class="col-sm-4">
+          <label for="benecryacntnumbr" class="clss-txtcolor">Beneficiary AccountNumber</label>
+          <input type="number" class="form-control" id="benecryacntnumbr" formControlName="benecryacntnumbr">
+        </div>
+      </div>
+      <div class="row  mb-3"> 
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+            <label for="paymnt" class="clss-txtcolor">Payment Detail</label>
+            <!-- (keypress)="prevent($event)" -->
+            <input type="text" class="form-control" id="paymnt" (input)="onFocus($event)"  formControlName="paymnt" autocomplete="off">
+            <div class="erromsg" *ngIf="showmsg3">Allow characters only</div>
+
+          </div>
+         
+          <div  class="col-sm-4 pt-4">           
+            <!-- [disabled]= "!btnSubmit" -->
+            <input type="submit" class="btn class-btnclr" value="Submit"  id="btnSubmit">
+            <input type="clear" class="btn class-btnclr1" value="Clear" (click)="formreset()">
+          </div>    
+      </div>
+      <div class="row  mb-3"> 
+      </div>
+    </form>
+    </div>
+  </div>
+</div>

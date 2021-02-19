@@ -1,0 +1,74 @@
+.frstcard{
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;   
+}
+.frstcard1{
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.btn-click{
+    text-align: center;
+    align-items: center;
+
+}
+
+.class-new{
+    text-align: center;
+    font-weight: 500;
+    color: black;
+   
+}
+
+.header {
+    padding: 18px;
+    text-align: center;
+    background: #eeeeee;
+    color: black;
+    font-size: 30px;
+  }
+
+  .class-cardform{
+    width: 15rem;
+    height: 10rem;
+  }
+
+  .class-btnclr{
+    background: #7e7a7a;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+    outline: none !important;
+  }
+
+  .header-right {   
+    float: right;
+  }
+  
+  .class-logoutval{
+    margin: -96%;
+    font-weight: 500;
+
+  }
+  .class-backval{
+    margin: -129%;
+    font-weight: 500;
+  }
+  .header-left{
+    float: left;
+  }
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+  
